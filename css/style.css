@@ -6,3 +6,41 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+/* use universal selector to reset the 
+default settings on different browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  /*sets the gradiant as the top image and the hero.jpg
+  below it */
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 131, 0.8)
+    ),
+    url(../img/hero.jpg);
+  /* cover makes sure image fills the container,
+  top makes sure that the image gets croped from bottom 
+  on vh changes*/
+  background-size: cover;
+  background-position: top;
+
+  /*used to augment shape of image 
+  (top left xy,top right xy,bottom right xy, bottom left xy)  
+  i.e change shape to triangle*/
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
