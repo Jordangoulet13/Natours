@@ -8,6 +8,15 @@ Dark green: #28b485
 */
 /* use universal selector to reset the 
 default settings on different browsers */
+
+/*BEM format
+Block: The outermost parent element of the component is defined as the block.
+Element: Inside of the component may be one or more children called elements.
+Modifier: Either a block or element may have a variation signified by a modifier.
+Block: .block
+Element: .block__element
+Modifier: .block__element--modifier
+ */
 *,
 *::after,
 *::before {
@@ -54,17 +63,17 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -82,7 +91,7 @@ body {
   margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   /* display is used to change the span 
     element into a block element*/
   display: block;
@@ -101,7 +110,7 @@ body {
 */
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -176,7 +185,7 @@ i.e before and after click*/
   transform: translateY(-0.1rem);
 }
 
-.btn-white {
+.btn--white {
   background-color: white;
   color: #777777;
 }
@@ -203,7 +212,7 @@ i.e before and after click*/
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInButton 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
