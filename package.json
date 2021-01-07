@@ -1,0 +1,22 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "Loading page for natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jordangoulet13/Natours.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jordangoulet13/Natours/issues"
+  },
+  "homepage": "https://github.com/Jordangoulet13/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
