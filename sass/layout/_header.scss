@@ -1,0 +1,41 @@
+.header {
+  height: 95vh;
+  /*sets the gradiant as the top image and the hero.jpg
+     below it */
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/hero.jpg);
+  /* cover makes sure image fills the container,
+     top makes sure that the image gets croped from bottom 
+     on vh changes*/
+  background-size: cover;
+  background-position: top;
+
+  position: relative;
+
+  /*used to augment shape of image 
+     (top left xy,top right xy,bottom right xy, bottom left xy)  
+     i.e change shape to triangle*/
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
